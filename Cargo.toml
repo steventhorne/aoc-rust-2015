@@ -8,3 +8,5 @@ default-run = "aoc"
 
 [dependencies]
 clap = { version = "3.2.17", features = ["derive"] }
+md5 = "0.7.0"
+concat-string = "1.0.1"
