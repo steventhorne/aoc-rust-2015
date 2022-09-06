@@ -84,11 +84,4 @@ mod tests {
         let input = read_file("examples", 11);
         assert_eq!(part_one(&input), "abcdffaa");
     }
-
-    #[test]
-    fn test_part_two() {
-        use aoc::read_file;
-        let input = read_file("examples", 11);
-        assert_eq!(part_two(&input), "");
-    }
 }
