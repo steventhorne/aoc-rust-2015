@@ -3,6 +3,7 @@ use std::fs;
 
 pub mod _07;
 pub mod _09;
+pub mod string_utils;
 
 pub const ANSI_ITALIC: &str = "\x1b[3m";
 pub const ANSI_BOLD: &str = "\x1b[1m";

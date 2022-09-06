@@ -1,10 +1,8 @@
+use aoc::string_utils;
 
 fn look_and_say(input: &str) -> String {
     let mut result = String::new();
-    let mut chars = input.chars();
-    if let Some(stripped) = input.strip_suffix('\n') {
-        chars = stripped.chars();
-    }
+    let mut chars = string_utils::strip_newline(input).chars();
     let mut current = chars.next().unwrap();
     let mut count = 1;
     for c in chars {
