@@ -26,12 +26,17 @@ impl LocationInfo {
             let location = location_str.to_string();
             let other_location = other_location_str.to_string();
 
-            if let std::collections::hash_map::Entry::Vacant(e) = distances.entry(location_str.to_string()) {
+            if let std::collections::hash_map::Entry::Vacant(e) =
+                distances.entry(location_str.to_string())
+            {
                 let mut map = HashMap::new();
                 map.insert(other_location, distance);
                 e.insert(map);
             } else {
-                distances.get_mut(&location).unwrap().insert(other_location, distance);
+                distances
+                    .get_mut(&location)
+                    .unwrap()
+                    .insert(other_location, distance);
             }
         }
 
