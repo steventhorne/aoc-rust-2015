@@ -47,7 +47,7 @@ Template includes the following changes:
 * Install the [Rust toolchain](https://www.rust-lang.org/tools/install).
 * (optional) Install [rust-analyzer](https://rust-analyzer.github.io/manual.html) for your editor.
 * (optional) Install a native debugger, e.g. [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) for VS Code.
-* (optional) Install [`aoc-cli`](https://github.com/scarvalhojr/aoc-cli/) and follow their setup guide to use the `download` script for puzzle inputs. (see below)
+* (optional) Install [`aoc-cli`](https://github.com/scarvalhojr/aoc-cli/) and follow their setup guide to download inputs.
 * (optional) Setup the README stars github action. (see below)
 
 ## Commands
