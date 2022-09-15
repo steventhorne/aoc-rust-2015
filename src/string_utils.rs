@@ -1,7 +1,5 @@
 pub fn strip_newline(s: &str) -> &str {
-    if let Some(ss) = s.strip_suffix('\n') {
-        ss
-    } else {
-        s
-    }
+    s.strip_suffix("\r\n")
+        .or_else(|| s.strip_suffix('\n'))
+        .unwrap_or(s)
 }
